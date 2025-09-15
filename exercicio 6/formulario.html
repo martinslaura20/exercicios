@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro no curso de informática</h1>
+    <form action="" method="post">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" required>
+            <!-- O atributo type text cria uma area para preencher com texto, e o atributo required torna o campo obrigatório. -->
+        </p>                       
+        <p><label for="iidade">Idade:</label>           
+            <input type="text" name="idade" id="iidade" placeholder="Digite sua idade" required>
+        </p>
+        <p><label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" placeholder="Digite seu Email" required>
+            <!-- O atributo email faz com que assim que escreverem o @ se torna obrigatório, e ele já reconhece o email. -->
+        </p>
+        <p><label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required>
+            <!-- O atributo password faz com que assim que escreverem a senha, ela se torna oculta. -->
+        </p>
+        <p>
+        Turma         
+        <!-- O atributo type radio cria campos que podem ser selecionados. -->
+        <input type="radio" name="manha" id="imanha">
+        <label for="">Manhã</label>
+        <input type="radio" name="tarde" id="itarde">
+        <label for="">Tarde</label>
+        <input type="radio" name="noite" id="inoite">
+        <label for="">Noite</label>
+        </p>
+        <p>
+        Interesses: <br>
+        <!-- O atributo checkbox cria campos de checklist para serem marcados. -->
+        <input type="checkbox" name="programação" id="iprogramação">
+        <ladel for="iprogramação">Programação</ladel>
+        <input type="checkbox" name="design" id="idesign">
+        <ladel for="idesign">Design</ladel>
+        <input type="checkbox" name="games" id="igames">
+        <ladel for="igames">Games</ladel>
+        <input type="checkbox" name="redes" id="iredes">
+        <ladel for="iredes">Redes</ladel>
+        </p>
+        <p>
+         Cidade
+         <!-- O atributo select faz com assim que assim clique  -->
+         <select name="" id="">
+            <option value="">Selecione...</option>
+            <option value="">São Paulo</option>
+            <option value="">Rio de Janeiro</option>
+            <option value="">Belo Horizonte </option>
+         </select>
+        </p>
+        <p>
+            Mensagem:
+            <!-- Faz uma caixa de texto para comentar. -->
+            <textarea name="textarea" id="itextarea" placeholder="Digite sua mensagem aqui..."></textarea>
+        </p>
+
+        <input type="submit" value="Enviar">    
+        <!-- Cria um botão para enviar os dados. -->
+        <input type="reset" value="Limpar">
+        <!-- Cria um botão para limpar os dados. -->
+    </form>
+</body>
+</html>
